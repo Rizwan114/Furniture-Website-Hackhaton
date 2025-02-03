@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { TbTruckDelivery } from "react-icons/tb";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
@@ -6,65 +7,41 @@ import { LuSprout } from "react-icons/lu";
 
 const Footer = () => {
   return (
-    <div className='w-[1440px] h-[355px] bg-white '>
-
-        <h2 className='w-[366px] h-[34px] mt-[60px] ml-[529px] font-normal size-[24px] leading-[33.6px] text-[#2A254B]'>What makes our brand different</h2>
-
-
-    <div className='flex '>
-                {/* 1 */}
-        <div className='w-[270px] h-[160px] mt-[145px] ml-[90px] gap-[16] bg-gray-100'>
-            <div className='w--[24px] h-[24px]'>
-            <TbTruckDelivery />
-            </div>
-            <div className='w-[270px] h-[84px] gap-[8px]'>
-            <h6 className='w-[199px] h-[28px] font-normal size-[20px] leading-[28px] text-[#2A254B]'>Next day as standard</h6>
-                <p className='w-[270px] h-[48px] font-normal size-[16px] leading-[24px] mt-3  text-[#2A254B]'>Order before 3pm and get your order
-                the next day as standard</p>
-            </div>
-         </div>
-
-            {/* 2 */}
-            <div className='w-[266px] h-[160px] mt-[145px] ml-[40px] gap-[16px] bg-gray-100'>
-            <div className='w-[24px] h-[24px]'>
-            <IoIosCheckmarkCircleOutline />
-            </div>
-            <div className='w-[266px] h-[84px] gap-[8px]'>
-            <h6 className='w-[205px] h-[28px] font-normal size-[20px] leading-[28px] text-[#2A254B]'>Made by true artisans</h6>
-                <p className='w-[266px] h-[48px] font-normal size-[16px] leading-[24px] mt-3  text-[#2A254B]'>Handmade crafted goods made with
-                real passion and craftmanship</p>
-            </div>
-           </div>
-
-
-             {/* 3 */}
-             <div className='w-[235px] h-[160px] mt-[145px] ml-[40px] gap-[16px] bg-gray-100'>
-            <div className='w-[24px] h-[24px]'>
-            <BiPurchaseTag />
-            </div>
-            <div className='w-[235px] h-[84px] gap-[8px]'>
-                <h6 className='w-[196px] h-[28px] font-normal size-[20px] leading-[28px] text-[#2A254B]'>Unbeatable prices</h6>
-                <p className='w-[235px] h-[48px] font-normal size-[16px] leading-[24px]  text-[#2A254B] mt-3'>For our materials and quality you won’t find better prices anywhere</p>
-            </div>
-           </div>
-
-
-             {/* 4 */}
-             <div className='w-[266px] h-[160px] mt-[145px] ml-[40px] gap-[16px] bg-gray-100'>
-            <div className='w-[24px] h-[24px]'>
-            <LuSprout />
-            </div>
-            <div className='w-[266px] h-[84px] gap-[8px]'>
-            <h6 className='w-[196px] h-[28px] font-normal size-[20px] leading-[28px] text-[#2A254B]'>Recycled packaging</h6>
-                <p className='w-[265px] h-[48px] font-normal size-[16px] leading-[24px] mt-3  text-[#2A254B]'>We use 100% recycled packaging to ensure our footprint is manageable</p>
-            </div>
-           </div>
+    <div className='bg-white py-16 px-6 text-center'>
+      <h2 className='text-2xl font-semibold text-[#2A254B] mb-10'>
+        What makes our brand different
+      </h2>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto'>
+        {/* Feature 1 */}
+        <div className='flex flex-col items-center text-center p-6 bg-gray-100 rounded-lg shadow-md'>
+          <TbTruckDelivery className='text-4xl text-[#2A254B] mb-4' />
+          <h6 className='text-lg font-semibold text-[#2A254B]'>Next day as standard</h6>
+          <p className='text-sm text-[#2A254B] mt-2'>Order before 3pm and get your order the next day as standard.</p>
+        </div>
         
-      
-
+        {/* Feature 2 */}
+        <div className='flex flex-col items-center text-center p-6 bg-gray-100 rounded-lg shadow-md'>
+          <IoIosCheckmarkCircleOutline className='text-4xl text-[#2A254B] mb-4' />
+          <h6 className='text-lg font-semibold text-[#2A254B]'>Made by true artisans</h6>
+          <p className='text-sm text-[#2A254B] mt-2'>Handmade crafted goods made with real passion and craftsmanship.</p>
+        </div>
+        
+        {/* Feature 3 */}
+        <div className='flex flex-col items-center text-center p-6 bg-gray-100 rounded-lg shadow-md'>
+          <BiPurchaseTag className='text-4xl text-[#2A254B] mb-4' />
+          <h6 className='text-lg font-semibold text-[#2A254B]'>Unbeatable prices</h6>
+          <p className='text-sm text-[#2A254B] mt-2'>For our materials and quality, you won’t find better prices anywhere.</p>
+        </div>
+        
+        {/* Feature 4 */}
+        <div className='flex flex-col items-center text-center p-6 bg-gray-100 rounded-lg shadow-md'>
+          <LuSprout className='text-4xl text-[#2A254B] mb-4' />
+          <h6 className='text-lg font-semibold text-[#2A254B]'>Recycled packaging</h6>
+          <p className='text-sm text-[#2A254B] mt-2'>We use 100% recycled packaging to ensure our footprint is manageable.</p>
+        </div>
+      </div>
     </div>
- </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

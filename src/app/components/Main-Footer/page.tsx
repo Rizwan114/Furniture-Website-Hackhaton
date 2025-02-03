@@ -1,66 +1,59 @@
-import React from 'react'
+
+import React from 'react';
 
 export default function MainFooter() {
   return (
-    <div className='w-[1440px] h-[380px] bg-[#2A254B] flex'>
-
-     
-        <div className='flex'>
-                                         {/* 01 */}
-
-    <div className='w-[108px] h-[175px] mt-[58px] ml-[82px] gap[12px] text-sm'>
-        <p className='w-[43px] h-[20px] font-normal size-[16px] leading-[19.68px] text-white mt-6'>Menu</p>
-        <p className='w-[90px] h-[19px] font-normal size-[14px] leading-[18.9px] text-white mt-3'>New arrivals</p>
-        <p className='w-[95px] h-[19px] font-normal size-[14px] leading-[18.9px] text-white mt-3' >Best sellers</p>
-        <p className='w-[120px] h-[20px] font-normal size-[16px] leading-[19.68px] text-white mt-3'>Recently viewed</p>
-        <p className='w-[130px] h-[19px] font-normal size-[14px] leading-[18.9px] text-white mt-3'>Popular this week</p>
-        <p className='w-[85px] h-[19px] font-normal size-[14px] leading-[18.9px] text-white mt-3' >All products</p>
-    </div>
-
-
-                                         {/* 02 */}
-
-     <div className='w-[108px] h-[175px] mt-[58px] ml-[82px] gap[12px] text-sm'>
-        <p className='w-[84px] h-[20px] font-normal size-[16px] leading-[19.68px] text-white mt-6'>Categories</p>
-        <p className='w-[56px] h-[19px] font-normal size-[14px] leading-[18.9px] text-white mt-3'>Crockery</p>
-        <p className='w-[55px] h-[19px] font-normal size-[14px] leading-[18.9px] text-white mt-3' >Furniture</p>
-        <p className='w-[67px] h-[20px] font-normal size-[16px] leading-[19.68px] text-white mt-3'>Homeware</p>
-        <p className='w-[80px] h-[19px] font-normal size-[14px] leading-[18.9px] text-white mt-3'>Plant pots</p>
-        <p className='w-[40px] h-[19px] font-normal size-[14px] leading-[18.9px] text-white mt-3' >Chairs</p>
-        <p className='w-[56px] h-[19px] font-normal size-[14px] leading-[18.9px] text-white mt-3' >Crockery</p>
-    </div>
-
-
-
-                                          {/* 01 */}
-     <div className='w-[108px] h-[175px] mt-[58px] ml-[82px] gap[12px] text-sm'>
-        <p className='w-[105px] h-[20px] font-normal size-[16px] leading-[19.68px] text-white mt-6'>Our company</p>
-        <p className='w-[65px] h-[19px] font-normal size-[14px] leading-[18.9px] text-white mt-3'>About us</p>
-        <p className='w-[62px] h-[19px] font-normal size-[14px] leading-[18.9px] text-white mt-3' >Vacancies</p>
-        <p className='w-[80px] h-[20px] font-normal size-[16px] leading-[19.68px] text-white mt-3'>Contact us</p>
-        <p className='w-[44px] h-[19px] font-normal size-[14px] leading-[18.9px] text-white mt-3'>Privacy</p>
-        <p className='w-[110px] h-[19px] font-normal size-[14px] leading-[18.9px] text-white mt-3' >Returns policy</p>
-    </div>
-
-    <div className='ml-12 mt-[80px]  '>
-    <p className='w-[142px] h-[20px] mt-[58] ml-[50px] font-normal size-[16px] leading-[19.68px] text-white'>Join our mailing list</p>
-    <div className='w-[550px] h-[56px] mt-[94px] ml-[px] bg-gray-500 flex'>
-        <div className='w-[509px] h-[56px] text-[#5f5f5f98]'>
-            <input type="text" placeholder='your@email.com' className='w-[300px] h-[22px] mt-[17px] ml-[32px] font-normal size-[16px] leading-[21.6] text-[#FFFFFF]' />
+    <div className='bg-[#2A254B] text-white py-10 px-6 md:px-12 lg:px-24'>
+      <div className='max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8'>
+        {/* Menu */}
+        <div>
+          <h4 className='font-semibold text-lg mb-4'>Menu</h4>
+          <ul className='space-y-2'>
+            <li>New arrivals</li>
+            <li>Best sellers</li>
+            <li>Recently viewed</li>
+            <li>Popular this week</li>
+            <li>All products</li>
+          </ul>
         </div>
-    <div className='w-[118px] h-[56px] pt-[16px] pr-[32px] pb-[16px] pl-[32px]  bg-[#FFFFFF]'>
-        <p className='w-[55px] h-[24px] font-normal size-[16px] leading-[24px] text-[#2A254B]'> Sign up</p>
-    </div>
-    </div>
-    </div>
 
+        {/* Categories */}
+        <div>
+          <h4 className='font-semibold text-lg mb-4'>Categories</h4>
+          <ul className='space-y-2'>
+            <li>Crockery</li>
+            <li>Furniture</li>
+            <li>Homeware</li>
+            <li>Plant pots</li>
+            <li>Chairs</li>
+          </ul>
+        </div>
 
+        {/* Our Company */}
+        <div>
+          <h4 className='font-semibold text-lg mb-4'>Our company</h4>
+          <ul className='space-y-2'>
+            <li>About us</li>
+            <li>Vacancies</li>
+            <li>Contact us</li>
+            <li>Privacy</li>
+            <li>Returns policy</li>
+          </ul>
+        </div>
+
+        {/* Mailing List */}
+        <div>
+          <h4 className='font-semibold text-lg mb-4'>Join our mailing list</h4>
+          <div className='flex items-center bg-gray-600 rounded-lg overflow-hidden'>
+            <input
+              type='email'
+              placeholder='your@email.com'
+              className='bg-transparent px-4 py-3 w-full outline-none text-white placeholder-gray-300'
+            />
+            <button className='bg-white text-[#2A254B] px-6 py-3 font-semibold'>Sign up</button>
+          </div>
+        </div>
+      </div>
     </div>
-
-     
-        
-    
-
-    </div>
-  )
+  );
 }

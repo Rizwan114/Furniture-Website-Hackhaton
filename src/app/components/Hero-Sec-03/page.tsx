@@ -1,52 +1,42 @@
+
 import React from 'react';
 import Image from 'next/image';
 
 function HeroSec() {
   return (
-    <div className='w-[1440px] h-[744px] bg-white'>
+    <div className='w-full bg-white p-6 md:p-12'>
+      <h1 className='text-3xl font-semibold text-[#2A254B] text-center md:text-left mb-10'>Our popular products</h1>
 
-      <h1 className='w-[330px] h-[45px] mt-[64px] ml-[30px] font-normal size-[32px] leading-[44.8px] text-[#2A254B] text-3xl'>Our popular products</h1>
-
-        <div className='flex gap-12'>
-
-              {/* picture 01 */}
-          <div className='w-[630px] h-[462px] mt-[134px] ml-[30] gap-[24px]'>
-            <Image src={"/Sofa.svg"} alt='Sofa' width={630} height={375}></Image>
-            <div className='w-209px] h-[63px] gap-[8px]'>
-              <h6 className='w-[209px] h-[28px] font-normal size-[20px] leading-[28px] mt-3 text-[#2A254B]'>The Poplar suede sofa</h6>
-              <p className='w-[46px] h-[27px] font-normal size-[18px] leading-[27px] mt-1 text-[#2A254B]'>£980</p>
-            </div>
-          </div>
-
-                        {/* picture 02 */}
-          <div className='w-[305px] h-[462px] mt-[134px] gap-[24px]'>
-            <Image src={"/Chair2.svg"} alt='Chair' width={305} height={375}></Image>
-            <div className='w-209px] h-[63px] gap-[8px]'>
-              <h6 className='w-[154px] h-[28px] font-normal size-[20px] leading-[28px] mt-3 text-[#2A254B]'>The Dandy chair</h6>
-              <p className='w-[44px] h-[27px] font-normal size-[18px] leading-[27px] mt-1 text-[#2A254B]'>£250</p>
-            </div>
-          </div>
-
-
-                        {/* picture 03 */}
-           <div className='w-[305px] h-[462px] mt-[134px] gap-[24px]'>
-            <Image src={"/Small-Chair.svg"} alt='Small-Chair' width={305} height={375}></Image>
-            <div className='w-209px] h-[63px] gap-[8px]'>
-              <h6 className='w-[154px] h-[28px] font-normal size-[20px] leading-[28px] mt-3 text-[#2A254B]'>The Dandy chair</h6>
-              <p className='w-[44px] h-[27px] font-normal size-[18px] leading-[27px] mt-1 text-[#2A254B]'>£250</p>
-            </div>
-          </div>
-
+      <div className='flex flex-col md:flex-row justify-center gap-12'>
+        {/* Product 1 */}
+        <div className='max-w-xs md:max-w-md text-center'>
+          <Image src='/Sofa.svg' alt='Sofa' width={630} height={375} className='w-full rounded-lg' />
+          <h6 className='text-xl font-medium text-[#2A254B] mt-3'>The Poplar suede sofa</h6>
+          <p className='text-lg text-[#2A254B]'>£980</p>
         </div>
 
+        {/* Product 2 */}
+        <div className='max-w-xs text-center'>
+          <Image src='/Chair2.svg' alt='Chair' width={305} height={375} className='w-full rounded-lg' />
+          <h6 className='text-xl font-medium text-[#2A254B] mt-3'>The Dandy chair</h6>
+          <p className='text-lg text-[#2A254B]'>£250</p>
+        </div>
 
-        <div className='w-[170px] h-[56px] bg-[#e4e4e4] mt-[60px] ml-[635px] pt-[16px] pr-[32px] pb-[16px] pl-[32px] gap-[10px]'>
-        <button className='w-[106px] h-[24px] font-normal size-[16px] leading-[24px] text-[#2A254B]'>View collection</button>
+        {/* Product 3 */}
+        <div className='max-w-xs text-center'>
+          <Image src='/Small-Chair.svg' alt='Small Chair' width={305} height={375} className='w-full rounded-lg' />
+          <h6 className='text-xl font-medium text-[#2A254B] mt-3'>The Dandy chair</h6>
+          <p className='text-lg text-[#2A254B]'>£250</p>
+        </div>
+      </div>
+
+      <div className='flex justify-center mt-12'>
+        <button className='bg-gray-200 text-[#2A254B] px-6 py-3 font-medium text-lg rounded-md hover:bg-gray-300 transition'>
+          View collection
+        </button>
+      </div>
     </div>
-
-
-    </div>
-  )
+  );
 }
 
-export default HeroSec
+export default HeroSec;
